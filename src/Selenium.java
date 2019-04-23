@@ -17,7 +17,15 @@ public class Selenium {
 		
 		driver.get("https://www.google.com/");
 		//printing to the console
-		System.out.println(driver.getTitle());
+		System.out.println(driver.getTitle());// title
+		System.out.println(driver.getCurrentUrl());// validating the url
+		//System.out.println(driver.getPageSource());// print the source code
+		driver.get("http://yahoo.com");
+		driver.navigate().to("http://centennailcollege.ca");
+		driver.navigate().forward();
+		driver.navigate().back();
+		driver.close(); // it close the current browser 
+		driver.quit();// it close all open browser. use for child windows
 
 	}
 
