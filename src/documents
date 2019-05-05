@@ -18,3 +18,33 @@ tagName[Atrribute*='value'] - Css regular expression
 
 
 (Title 2)
+
+ Interview Questions:
+What is the difference between Relative and absolute xpath?
+Relative- Does not depend on parent nodes and its prefer 
+Parent/child- Absolute xpath –
+ you have to figure out how many matching element you have by making the xpath or css 
+you cannot traverse to sibling using css which can be consider and drawback of css 
+ How to traverse to sibling element using xpath?
+.//*[@id='tablist1-tab1']/following-sibling::li[2]
+How to traverse back to Parent element from Child element using Xpath?
+.//*[@id='tablist1-tab1']/parent::ul	
+ How to identify element with Text based?
+ 
+ // traverse through the parent node to the child if the child node is static 
+		// //tagname[@attribute='ad']/div/div/[2 mean second child]/input
+		// it the it dynamic then use sibling or parent relashionship 
+		
+
+		driver.findElement(By.xpath("//ul[@class='responsive-tabs__list']/li[1]/following-sibling::li[2]")).click();
+
+		System.out.println(driver.findElement(By.xpath(".//*[@id='tablist1-tab2']/parent::ul")).getAttribute("role"));
+		//
+ 
+ you cannot traverse back through css its only forward moving and its 10 times faster 
+ 
+ css selector 
+ #id, for css if the class name has spaces then replace it by dots, always look for unique attribute 
+ 
+ 
+
