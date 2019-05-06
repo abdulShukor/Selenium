@@ -31,6 +31,8 @@ How to traverse back to Parent element from Child element using Xpath?
 .//*[@id='tablist1-tab1']/parent::ul	
  How to identify element with Text based?
  
+ 3.0 Title 
+ parent and child relationship 
  // traverse through the parent node to the child if the child node is static 
 		// //tagname[@attribute='ad']/div/div/[2 mean second child]/input
 		// it the it dynamic then use sibling or parent relashionship 

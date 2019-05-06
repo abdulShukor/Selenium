@@ -7,8 +7,9 @@ public class ParentChildRel {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.setProperty("webdriver.chrome.driver","C:\\work\\chromedriver.exe");
-		WebDriver driver =new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
 		driver.get("http://www.qaclickacademy.com/interview.php");
 		driver.findElement(By.xpath("//li[text()=' Selenium ']")).click();
 		
