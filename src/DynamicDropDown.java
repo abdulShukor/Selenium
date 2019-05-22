@@ -10,8 +10,8 @@ public class DynamicDropDown {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		// 99
-		// hidden element is use javaScript we javaScript executer for getting the item
+		// Chapter 99
+		// hidden element is use javaScript we  use javaScript executer for getting the item
 
 		driver.get("https://www.ksrtc.in");
 		driver.findElement(By.xpath("//input[@id='fromPlaceName']")).sendKeys("BENG");

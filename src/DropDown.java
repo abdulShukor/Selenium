@@ -22,6 +22,7 @@ public class DropDown {
 
 		driver.findElement(By.id("divpaxinfo")).click();
 		// Thread.sleep(2000L);
+		// like adding five adult or children which has + sign
 		int i = 1;
 		while (i < 5) {
 			driver.findElement(By.id("divpaxinfo")).click();
