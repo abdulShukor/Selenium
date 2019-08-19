@@ -15,6 +15,7 @@ $("") - for css ,    $x("")   or xpath
 tagName[attribute='value']  -CSS  tagName#id- CSS   tagname.classname- CSS
 //tagName[contains(@attribute,'value')]  - xpath regular expression
 tagName[Atrribute*='value'] - Css regular expression
+Chropath(development tools plugin)  can tell how many object you have the information and click on first one 
 
 
 (Title 2)
@@ -23,6 +24,7 @@ tagName[Atrribute*='value'] - Css regular expression
 What is the difference between Relative and absolute xpath?
 Relative- Does not depend on parent nodes and its prefer 
 Parent/child- Absolute xpath –
+css is 10 faster then xpath 
  you have to figure out how many matching element you have by making the xpath or css 
 you cannot traverse to sibling using css which can be consider and drawback of css 
  How to traverse to sibling element using xpath?
