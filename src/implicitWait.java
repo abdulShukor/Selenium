@@ -15,7 +15,7 @@ public class implicitWait {
 		// implicit wait is globally define and it apply to all step. 
 		// -- if the result show in 3 seconds it will not wait for the define time 
 		// Explicit wait is define for particular object. its not global level 
-		// combination of both is ideal 
+		// combination of both is ideal. if the result show less then define time it will terminate before the original time 
 		// thread is sleep the or holding the test for the define time even if the result 
 		//-- is out or load sooner then the define time. it not prefer to use it 
 		

@@ -21,11 +21,13 @@ public class DropDown1 {
 	driver.findElement(By.xpath("//a[@value='BLR']")).click();
 
 	Thread.sleep(2000);
-	// in case your mamger does not like the index hard coding also make sure cheque 
+	// in case your manager does not like the index hard coding also make sure cheque 
 	// that how many item you have with same xpath 
 	//driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
 
 	driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
+	
+	// parent xpath space then child xpath
 
 	driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
 

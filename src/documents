@@ -17,6 +17,22 @@ tagName[attribute='value']  -CSS  tagName#id- CSS   tagname.classname- CSS
 tagName[Atrribute*='value'] - Css regular expression
 Chropath(development tools plugin)  can tell how many object you have the information and click on first one 
 
+isselected() checking if the check box is selected or not, after you checking if the checkbox is in the isEnable()or Diseble()
+// the resul is boolean 
+
+Debuging 
+Control+shift+f it farmat   the code 
+step by step be watching the result 
+toggle breakpoint for debuging->run as debug it will stop where you put toggle point  
+step over -> its step over to the next line 
+resume-> will go back to normal 
+step into -> is for method if you want t go inside then ->step over 
+disable break point->click on disable 
+you can see variable in run time in variable column 
+ if you want to execute method just go with step over but 
+ if you want to go inside then step into 
+ 
+
 
 (Title 2)
 
@@ -32,6 +48,14 @@ you cannot traverse to sibling using css which can be consider and drawback of c
 How to traverse back to Parent element from Child element using Xpath?
 .//*[@id='tablist1-tab1']/parent::ul	
  How to identify element with Text based?
+ driver.findElement(By.xpath("//li[text()=' Selenium ']")).click();
+ 
+ static, when there is select tag, you can do this with select calss
+ when there is repeat line then make a loop for it 
+ element is not visible mean maybe more then one xpath and look for index
+ code standard, some poeple does not like index, solution, write parent xpath then space and give child xpath 
+ find common value between radio box then count it. 
+ 
  
  3.0 Title 
  parent and child relationship 

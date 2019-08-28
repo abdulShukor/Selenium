@@ -13,6 +13,11 @@ public class Calender {
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// find the common class name between days, months, or years
+		// Today date has unique attribute other has no unique attribute 
+		// for that we need loop if we want the future date
+		//when there is multiple css attribute then go through parent child concept to identify them uniquely 
+		// like [classname] [classname]
+		//! is very important in while loop, ! of true false and false is true 
 
 		driver.get("https://www.path2usa.com/travel-companions");
 		// April 23

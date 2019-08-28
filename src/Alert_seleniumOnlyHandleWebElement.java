@@ -11,6 +11,7 @@ public class Alert_seleniumOnlyHandleWebElement {
 		WebDriver driver = new ChromeDriver();
 		
 	// if your not getting any html element for pop up then use alert class 
+		// selenium can only handle html elements 
 		
 		driver.get("http://www.tizag.com/javascriptT/javascriptalert.php");
 

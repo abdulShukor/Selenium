@@ -19,6 +19,7 @@ public class Scope {
 		// header
 		// 1. Give me the count of links on the page.
 		// 2. Count of footer section-
+		//scope->miniscope->misniscop->miniscop
 		driver.get("http://qaclickacademy.com/practice.php");
 
 		System.out.println(driver.findElements(By.tagName("a")).size());
@@ -33,7 +34,8 @@ public class Scope {
 
 		// 4- click on each link in the coloumn and check if the pages are opening-
 		for (int i = 1; i < coloumndriver.findElements(By.tagName("a")).size(); i++) {
-
+			
+//print all the links in separate window 
 			String clickonlinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
 
 			coloumndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinkTab);

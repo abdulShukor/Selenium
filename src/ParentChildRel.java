@@ -29,8 +29,8 @@ public class ParentChildRel {
 		// check first in tool like firepath
 		// with css you can do it without tag name 
 		// with #ID and with class .classname
-		// find unique if has the same field, find unique attribute 
-
+		// find unique if has the same field more fields, find unique attribute 
+ 
 	}
 
 }

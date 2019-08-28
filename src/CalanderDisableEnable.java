@@ -12,6 +12,9 @@ public class CalanderDisableEnable {
 		// if some thing is disable even if you click on it  will stay as it is 
 		//  using isEnable() and isDisable() methods .
 		// what is the attribute the something is change when you are disable or enable 
+		// now a day when click on disable it will mkae it enable, how to handle this
+		// what is the attribute in html that make that it disable. check the obasity is 1 or 0.5
+		// do the following steps
 		System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
 
 		// this step getting the object CSS property 
