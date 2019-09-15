@@ -1,0 +1,16 @@
+Jenkins build with parameters, control parameter from Jenkins, you need to send them from maven 
+Jenkins->configure – this is parameter – choice parameter - browser – chrome, Firefox, internet explorer -headless browser 
+Test -Dbrowser =”$browser”
+Encapsulation variable should be private always wrap in method to encapsulate them not expose it outside , its coding standards . access methods are public 
+No hard code any thing in a project 
+Dynamic get the project location path 
+Dynamic browser extension path 
+
+Headless execution without executing of browser do it in the back. create through chrome Captions class.
+
+Interface had just declaration and the implementation is in a class that extends the interface 
+Page object mechanism, same class file put all related file in one class with global declaration
+ Drive is static or not 
+Static is ok for sequence execution of test cases 
+It will fail if you run parallel test case with static key word
+No use of static nowadays , static is maintain one copy the object in entire file 
