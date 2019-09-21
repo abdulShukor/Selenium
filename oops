@@ -1,0 +1,183 @@
+Reusable code wraps it in method, using other class need to be initiate in other your r using or 
+In main. Void vs return, if the method is return value then you can print in system.out.print() but 
+You cannot do void method give you error, for testing purpose we us return type pass.
+String is class and has many build methods, two to declare it 
+Manipulating string 
+1 String str = new String ()
+2. String str = “abdul”
+For looping purpose, we use charAt(i)
+With array is a[i]
+
+Inheritance 
+Common or redundant make it in one class and inherited to other 
+Grandfather-father-grandchild. you can inherit multiple with extends 
+Reduce redundant code 
+Childe class can inherit both father and grandfather at the same time 
+Father extends Grandfather
+And grandchild extends father which already extends grandfather access methods in grandfather and father class 
+Interface 
+Client agreement between actual code and class implementation 
+Only signature, not braces, no implementation, just method, to implement we need classes 
+Method is void just a signature, need to be public, by default is public 
+You can create object same class in the main 
+You can create you own methods too along with the interface’s implantation 
+Public void Name ();
+Child reference can be assign to parent class 
+Return type , runtime polymorphism 
+
+
+(parent )Deveops de = new Deveops (
+Login n = new Devops ();
+Intertest in his own methods 
+(only print banker method that is in parent class Deveps class )Banker be = new Deveops ()
+
+You can more then one interface in a class separate with comma 
+One class impellent multiple interface 
+
+Array
+Declare and initialize it 
+Storing multiple value in single container of the same data type 
+Create array then initialize it 
+Or you can do both to gather 
+Multiple dimension array
+Combination of x and y or row and column 
+Int i[][]= new int[3][4];
+Or 
+Int a[]={{1,2,3}.3,4,5,}};
+
+Date
+Calendar class and date class to use
+Create  object of the class 
+Calendar class is preferable 
+Calendar  a = calendar.getinstance()
+Date d = new Date()
+Require specific format then you SampledateFormate sd = new sampledateforamte(“d/mm/yyyy”);
+Contractor is executing block of code when object is created, constructor invoke when create object
+Explicitly by compiler 
+Implicitly is created by developer
+We creating for instance variable . parametrize constructor vs default. you can have many contractors . when you create then
+ default one will not execute . when you created then need to be initiated .
+Super 
+Is use with inheritance when there is collision between variable or method has the same type. Then we super to refer to
+ parent object 
+Super.name, super.methodname(); you can use super key work in constructor 
+Name same value then super key is not require 
+Remember, super key should be the fist 
+This key word
+Refer to class level object not method level 
+It global variable 
+Global vs local variable 
+
+Final key word, is always constant not reference type it never alter or going to be change . you can make method and 
+classes too as private
+Final vs finally is use in exception 
+Java package , user define package ,package import package name. class name 
+Utill and lang package 
+Class a can use class be if are in the same package after instantiating 
+For other package you need to import package 
+Access modifier 
+Default, private, public, protected
+If you did not specify the type by default is public. Default can access in entire package but not access outside package
+ even if inherited the package even if you import the package, no access 
+You can access to class not method if you define default 
+Public you access in entire package and outside package by inheriting or import package 
+Private no access outside of class where define 
+Protected is accessible in entire package, subclasses can access  
+Protected +default +one more feature you can use by other package those that only inheriting the class the parent class 
+Exception 
+Find error without failing the program by debugging, exception e is general one, specific exception arthimiticexception, 
+indexoutbond exception 
+One block can be following by multiple catch block must follow with catch block 
+Finally block, execute if the program run successfully or fail it will execute in any case.
+Use only with try block. Finally block will not execute without try block 
+If you want to stop the finally block just press the stop red button, then JVM will stop the finally block
+You can use try and finally block by skipping catch block 
+ 
+Try
+{
+}
+Catch (Exception e)
+{
+}
+Finally 
+{
+}
+
+ package coreJava; //one try can be followed by mutiplle catch blocks //catch should be an immediate block after try // public class exceptionDemo
+any kind of exception e can be accept by it is generic one 
+
+}
+
+}
+
+
+Collection 
+Is collection of classes and interfaces it has many build in methods and classes which makes programming job super easy 
+3 main collection 
+List, set,map
+List is order and may contain duplicate value include arrayList , LinkedList and vector
+Initiate arrayList class
+How to tell array list what kind object you are storing 
+package coreJava;
+
+import java.util.ArrayList;
+
+public class arrayListexample { // can accept duplicate values //ArraList,LinkedList,vector- Implementing List interface /
+/array have fixed size where as arraylist can grow dynamicaly //you can access and insert any value in any index private
+ int i =5; public static void main(String[] args) { // TODO Auto-generated method stub
+
+ArrayList<String> a=new ArrayList<String>(); a.add("rahul"); a.add("java"); a.add("java"); System.out.println(a);
+ a.add(0, "student"); System.out.println(a); /*a.remove(1); a.remove("java"); System.out.println(a);*/
+  System.out.println(a.get(2)); // testing System.out.println(a.contains("java")); System.out.println(a.indexOf("r")); 
+  System.out.println(a.isEmpty()); System.out.println(a.size()); } protected void abc() 
+  { // TODO Auto-generated method stub System.out.println("hello"); }
+
+}
+
+package coreJava;
+
+import java.util.ArrayList;
+
+public class arrayListexample { // can accept duplicate values //ArraList,LinkedList,vector- Implementing List interface //
+array have fixed size where as arraylist can grow dynamicaly //you can access and insert any value in any index ,
+ accept duplicate value In separate index , resizable ,insert anywhere,
+array is sequential , fixed size
+list guarantee order 
+
+
+ArrayList<String> a=new ArrayList<String>();
+
+}
+
+Set is collection which Is not allowed duplicate value 
+Hash set ,Linkedhashset, treeset 
+Random order 
+Iterator is interface make the return type <>, hasnext,next method 
+
+Hash set vs hash table 
+
+//HashSet treeset, LinkedHashset implements Set interface //does not accept duplicate values  // 
+There is no guarantee elements stored in sequential order..Random order HashSet<String> hs= new HashSet<String>(); 
+hs.add("USA"); hs.add("UK"); hs.add("INDIA"); hs.add("he"); hs.add("she"); hs.add("INDIA"); System.out.println(hs); 
+//System.out.println(hs.remove("UK")); System.out.println(hs.isEmpty()); System.out.println(hs.size()); 
+Iterator<String> i=hs.iterator(); while(i.hasNext()) { System.out.println(i.next()); } }
+
+
+
+Map
+Collection of value that store key value pair , no duplicate values 
+Hashmap,treemap,lickedhashmap
+Map.entry changing to set ,
+
+
+HashMap<Integer,String> hm=new HashMap<Integer,String>(); hm.put(0, "hello"); hm.put(1, "Gudbye"); hm.put(42, "morning");
+ hm.put(3, "evening"); System.out.println(hm.get(42)); hm.remove(42); System.out.println(hm.get(42)); Set sn= hm.entrySet(); 
+ Iterator it =sn.iterator(); //hashtable -pass table set collections  while(it.hasNext())
+  { System.out.println(it.next()); Map.Entry mp=(Map.Entry)it.next();// System.out.println(mp.getKey()); 
+  System.out.println(mp.getValue()); }
+
+Hash table vs hash map 
+Hashmap is no threat  sate and no synchronize(multiple program can access and operate it at same time ) 
+Hashmap , is threat safe and synchronize (if one program is using other program has to wait for it until release it then access), 
+has no null value accept 
+
