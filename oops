@@ -181,3 +181,37 @@ Hashmap is no threat  sate and no synchronize(multiple program can access and op
 Hashmap , is threat safe and synchronize (if one program is using other program has to wait for it until release it then access), 
 has no null value accept 
 
+
+
+Oop
+Class is fundamental  concept of oop , abject -state like size hardware, age , behaviour -like log off shut down  field =variable expected behaviour ,primitive is very limit we use customer made variable like Car class public Car name local variable(inside method)  vs instance variable , need access modifier general is private . we encapsulate to hide class variable access from public outside the class allowed method to access for outside of class to access, variable is state of class, create object of class can be treated as data type of. Null is internal value of class if we do not initialize it and string also has null value.
+We can do validation inside getter and setter what is valid and not valid value to ensure class make valid object. if we use default constructor and have instable variable then we need to initialize like 
+Class name = new class name ()
+Name. Instance value to be pass if we contractor then we initial the value inside creating object 
+We need to pass value or get through setter and getter, like bank, deposit, withdraw, without getter and setter it very risky that any one can change the fields value. 
+Contractor use for initializing to initiate object that you created, only called once at the beginning, it can be overloaded . with this key word we can call another constructor but must the first line 
+You can do setNAme(getname) method
+
+Reference, object , class , instance , every object had address that you build , you can have many reference to the object ,
+
+
+Inheritance share same common characteristic, line animal base class and subclass are inherited form base class by extending the class , then like , dog class, bird class , etc.
+Return method had no parameter but had return type, setter method has passing parameter but void return type 
+
+Interface 
+100 abstracts, just method signature may has parameter but class must implement what need to be done not how need to be done 
+Define no implementation, you can have extend multiple interface with, separator, you will have override methods . can have variable too no constructor 
+Abstract class is mixed up method signature, can have constructor and variable,
+Like a base class or concreate class but remember it cannot be initiated like interface 
+Must be implement , is abstract co code , for common behavior , commitment , will not change , not initialization , error massage not implementing 
+Composition 
+Has relation ship modeling has relationship like computer made of different part and some of computer also make of different part like mother board, then the class can passed as instance variable of the main class when you initiate main class you pass value of composite class 
+Always protect member of your class from outside of your class 
+We always work with class variable or passing to method this key word 
+You can even pass value to instance variable inside class as default value like private string car = Porsche 
+Polymorphism 
+Is about overriding 
+Method behaviour r based on abject action, different behaviour,
+Static vs instance , static use when we don’t need instance variable , you can access through class name ,  common copy across all , no initiating 
+
+
